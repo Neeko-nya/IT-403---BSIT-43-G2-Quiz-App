@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Cambay');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add this to your global CSS or component-specific style */
+.toast {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1050;
+    /* Ensure it's on top of other elements */
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcontent {
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modalcontent h3 {
+    margin-top: 0;
+}
+
+.cardTitle {
+    color: #5e2b8a;
+}
+
+.title {
+    font-weight: 700;
+    color: #5e2b8a;
+}
+
+.quiz-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.quizCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quizCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quizCard h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.quizCard p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.teacherlanding {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5c3c92;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-weight: bold
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.createClassButton {
+    background-color: #f2e85c;
+    color: #5c3c92;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.createClassButton:hover {
+    background-color: #e6d648;
+}
+
+.profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #5c3c92;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #5c3c92;
+    cursor: pointer;
+}
+
+.tab.active {
+    font-weight: bold;
+    border-bottom: 2px solid #5c3c92;
+}
+
+.classes-tab {
+    color: #888 !important;
+}
+
+.quiz-tab.active {
+    border-bottom: 2px solid #5c3c92;
+    color: #4F3268 !important;
+    cursor: pointer;
+}
+
+.quiz-container {
+    padding: 20px;
+}
+
+/* Quiz Tabs */
+.quiz-tabs {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.quiz-tab {
+    cursor: pointer;
+    color: #5c3c92;
+}
+
+/* Quiz Cards */
+.quizList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quizCard {
+    background-color: #e4deef;
+    border: 1px solid #d8c7d8;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quizCard h3 {
+    font-size: 18px;
+    color: #5c3c92;
+    margin: 0;
+}
+
+.quizCard .due-date {
+    font-size: 14px;
+    color: #c0392b;
+    margin: 0;
+}
+
+.quizCard .status {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Floating Action Button */
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8D8888;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fab:hover {
+    background-color: #4a2e76;
+}

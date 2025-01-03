@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Cambay');
+
+body {
+    margin: 0;
+    font-family: 'Cambay', sans-serif !important;
+    /* font-family: Arial, sans-serif; */
+}
+
+.maincontainer {
+    background-color: #5e2b8a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle,
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6 {
+    position: absolute;
+    background-color: #F2EE6F;
+    border-radius: 50%;
+    z-index: 0;
+
+}
+
+.circle1 {
+    /*upper left circle */
+    width: 54px;
+    height: 51px;
+    top: 39%;
+    left: 0%;
+}
+
+.circle2 {
+    /*lower right circle */
+    width: 125px;
+    height: 125px;
+    bottom: -1%;
+    right: 60%;
+}
+
+.circle3 {
+    /*lower left circle */
+    width: 537px;
+    height: 507px;
+    bottom: -12%;
+    left: -8%;
+}
+
+.circle4 {
+    /* upper right circle */
+    width: 125px;
+    height: 125px;
+    top: 44%;
+    right: 12%;
+}
+
+.circle5 {
+    /* smaller circle on upper right */
+    width: 54px;
+    height: 51px;
+    top: 0%;
+    right: 33%;
+}
+
+.circle6 {
+    /* large circle on upper right */
+    width: 537px;
+    height: 507px;
+    top: -24%;
+    right: -6%;
+}
+
+
+.contentwrapper {
+    background-color: #ffffff;
+    height: 80%;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgba(0.2, 0.2, 0.2, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.logosection {
+    flex: 2;
+    background-color: #f6ebf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logologin {
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formsection {
+    flex: 2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-bottom: 20px;
+    color: #5e2b8a;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Cambay' !important;
+}
+
+.tabs span,
+.tabs a {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #888;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+.tabs .active,
+.tabs a:hover {
+    color: #5e2b8a;
+    /* Change color on hover or active */
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transform: scale(1.1);
+    /* Slightly enlarge */
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #AEA9A9;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+.password-field {
+    position: relative;
+    width: 100%;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #AEA9A9;
+}
+
+
+
+.logintab {
+    color: black;
+    text-decoration: none;
+
+}
+
+.loginbutton {
+    background-color: #9D78BE;
+    color: white;
+    width: 125px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-color: #B69ACE !important;
+    border-width: 2.1px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin-left: 5.5rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.loginbutton:hover {
+    box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.forgot {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    opacity: 0.8;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+.forgot:hover {
+    color: #5e2b8a;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 150px;
+    background-color: #9D78BE;
+    margin: 0 10px;
+}
+
+.divider::before {
+    margin-right: 10px;
+
+}
+
+.divider::after {
+    margin-left: 10px;
+
+}
+
+.divider1 {
+    color: #888;
+    opacity: 50%;
+    font-size: 13px;
+    font-family: 'Cambay' !important;
+}
+
+
+/* Custom Style for Google Login Button */
+.googleloginwrapper {
+    background-color: #9D78BE !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 5px 5px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 313px;
+    border-style: solid !important;
+    border-color: #B69ACE !important;
+    border-width: 2.1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.google-login-wrapper:hover {
+    box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.google-login-wrapper button .google-icon {
+    display: none !important;
+    /* Optionally hide the Google icon */
+}
