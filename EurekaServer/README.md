@@ -17,7 +17,7 @@ Follow these steps to set up your Django project:
 3. **Create the virtual environment**:
 
    ```bash
-   uv venv
+   uv venv venv
    ```
 
 4. **Activate the virtual environment**:
